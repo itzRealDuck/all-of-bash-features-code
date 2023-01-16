@@ -1,0 +1,76 @@
+#! /bin/bash 
+
+
+
+# so this is a hello world program
+
+echo "hello world" 
+
+echo our *communism flash baks* bash version iz  $BASH_VERSION 
+echo $BASH 
+echo $HOME 
+echo $DOWNLOADS 
+echo $PWD 
+
+val=10
+
+name=ussrlovah 
+echo  the guys name that loves powershell programming is  $name
+echo yoo i got $val out of 10! 
+
+#echo "enter age plszzzi wanna sell data!1!1!1" 
+#read age 
+#echo "your age is $age years old" 
+echo "also i got data!!!!! " 
+echo "python bootsliper johnsena arch linux xmonad gnome all desktop enviorments" 
+echo "would you like to install packages?  " 
+echo "enter your names" 
+read name1 name2 name3 name4 
+echo "your names are.... : $name1 $name2 $name3 $name4"  
+read -p 'religion: ' religion_var 
+echo "religion? :" $religion_var 
+read -sp 'enter your password' password_var 
+echo "your password is : " $password_var
+echo "enter names again" 
+read -a names 
+echo "Names" ${names[0]},${names[1]} 
+echo "enter where kayne east is" 
+read 
+echo "ok his location is" $REPLY 
+echo $0 $1 $2 $3 "> names"
+args=("$@") 
+echo ${args[0]},${args[1]}.${args[2]},${args[3]} 
+
+
+
+echo "would you like to install the following packages " $packages
+word="Y" 
+read word
+
+if [[ $word == "Y" ]] 
+then 
+	echo "installing packages....."  
+elif [[  $word = "A" ]]  
+then 
+	echo "CANCELLED INSTALLATION SELF DESTRUCT = ON"
+else 
+	echo "cancelled"
+fi
+
+echo -e "enter name of da file \c "  
+read file_name 
+
+if [[ -e $file_name ]]  
+then 
+echo "it exists"
+if [ -w $file_name ] 
+then 
+echo "permession accepted" 
+cat >> $file_name
+else  
+	echo "permission denied bozo"
+fi
+else 
+	echo "$file_name not found so L bozo baddddd rario"
+fi
+
