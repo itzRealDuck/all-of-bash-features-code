@@ -82,4 +82,12 @@ then
 	echo "i am bigger better stronger"
 else 
 	echo "i am not biger or better or stronger" 
+fi 
+echo "what is your pets age" 
+petage=7
+read petage 
+if [ "$petage" -gt 4   ] || ["$petage" -lt 20  ]  
+then 
+	echo "damn hes big" 
+else "bro pets cannot live more than 20 years :skull:" 
 fi
