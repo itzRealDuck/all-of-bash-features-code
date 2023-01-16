@@ -72,5 +72,14 @@ else
 fi
 else 
 	echo "$file_name not found so L bozo baddddd rario"
-fi
+fi 
+echo "what is your age?"
+age=25 
+read age
 
+if [ "$age" -gt 18 ] && [ "$age" -lt 69 ]
+then 
+	echo "i am bigger better stronger"
+else 
+	echo "i am not biger or better or stronger" 
+fi
