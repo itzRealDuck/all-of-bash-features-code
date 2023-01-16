@@ -77,7 +77,7 @@ echo "what is your age?"
 age=25 
 read age
 
-if [ "$age" -gt 18 ] && [ "$age" -lt 69 ]
+if [ "$age" -gt 18 ] && [ "$age" -lt 69 ] #you can add "-a instead of making seprate brackets and adding && butt you need to add brackets like this [#here you gonna put the stuff like the age and yes add the -a in the middle after the first one[]]"
 then 
 	echo "i am bigger better stronger"
 else 
@@ -86,7 +86,7 @@ fi
 echo "what is your pets age" 
 petage=7
 read petage 
-if [ "$petage" -gt 4   ] || ["$petage" -lt 20  ]  
+if [ "$petage" -gt 4   ] || ["$petage" -lt 20  ]  # you can add -o instead of making seperate brackets and adding the the or simbole but you need to add brackets like this "[[you will type here the petage and like that]"]
 then 
 	echo "damn hes big" 
 else "bro pets cannot live more than 20 years :skull:" 
