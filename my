@@ -113,7 +113,7 @@ echo "the answer was" $(( num1 + num2 ))
 echo "now solve this whats 10 x 10000" 
 num3=5 
 num4=5
-read num3 num4 
+read 
 if [ $(( num3 * num4 )) -eq 25 ] 
 then 
 	echo "you got it right the answer is bellow" 
@@ -125,9 +125,19 @@ fi
 
 echo "the answer was" $(( num3 * num4 )) 
 
-num5=15 
-num6=5
 
+echo "nice your good how about this  " 
+num5=15
+num6=5
+read 
+if [ $(( num5 / num6 )) -eq 3 ] 
+then
+	echo "your good there is a final one and you will be free " 
+
+else 
+	echo "ok man you suck at math" 
+
+fi 
 
 echo "answer is  " $(( num5 / num6  )) 
 
