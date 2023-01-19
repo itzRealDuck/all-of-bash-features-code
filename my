@@ -166,23 +166,28 @@ echo "the answer was" $(( num7 - num8  ))
 
 echo "bye" 
 
+#!/bin/bash
 
-#decimal numbers arthemitic operators  
 num9=20.5
-num10=5
-echo "heres part two but we will be practicing with decimals" 
-echo "whats 20.5 + 5" 
-read 
-if [ $(( num9 + num10 )) | bc -eq $REPLY ] 
-then 
-echo "yo nice "
+num10=5 
 
-else 
-echo "you suck " 
+echo "heres part two but we will be practicing with decimals"
+read -rp "whats $num9 + $num10: " user_answer
 
-fi 
+real_answer="$(bc <<< "$num9 + $num10")"
+if [[ "$user_answer" == "$real_answer" ]]; 
 
-echo "answer was "  $(( num9 + num10 )) | bc  
+then
+  echo "yo nice " 
+
+else
+  echo "you suck "
+fi
+
+echo "answer was $real_answer"
+
+
+
 
 
 
