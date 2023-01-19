@@ -166,7 +166,6 @@ echo "the answer was" $(( num7 - num8  ))
 
 echo "bye" 
 
-#!/bin/bash
 
 num9=20.5
 num10=5 
@@ -187,6 +186,26 @@ fi
 echo "answer was $real_answer"
 
 
+
+#case 
+
+echo -e  "enter car name \c " 
+read value
+
+
+case $value in 
+[a-z] ) 
+echo "user entered $value kind of car" ;; 
+
+[A-Z]) 
+echo  "it is a $value not a honda"  ;; 
+? ) 
+echo "ok right $value  " ;; 
+
+ * ) 
+echo "unvalid $value" ;;  
+
+esac 
 
 
 
