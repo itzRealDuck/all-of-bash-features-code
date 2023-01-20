@@ -207,10 +207,19 @@ echo "unvalid $value" ;;
 
 esac 
 
+#arrays 
+echo "hello i will show how customizable bash is" 
 
+os=('windows' 'linux' 'macos') 
+os[3]='arch btw btw btw' 
+os[4]='kali linux ' 
+os[5]='arcocraft' 
+unset os[3] 
+echo ${os[@]} 
+echo ${os[0]} 
+echo ${os[1]} 
+echo ${!os[@]}
+echo ${#os[@]}
 
-
-
-
-
-
+string=ioioiosimdioadadaodjaid
+echo ${string[@]}
