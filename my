@@ -223,3 +223,16 @@ echo ${#os[@]}
 
 string=ioioiosimdioadadaodjaid
 echo ${string[@]}
+
+n=1 
+
+while [ $n -le 100  ] 
+do 
+	echo "$n" 
+	n=$(( n+1  )) 
+done 
+
+
+
+
+
